@@ -7,7 +7,7 @@ This project provides functionality for managing and importing SWIFT codes and c
 
 - **Java 17**
 - **Spring Boot** (for creating the application and exposing REST APIs)
-- **Postgres** (for storing data)
+- **Postgres** (simple and works fast for storing data)
 - **JUnit** (for testing)
 
 ## Prerequisites
