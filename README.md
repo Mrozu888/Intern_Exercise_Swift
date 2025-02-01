@@ -108,20 +108,20 @@ Fetch details of a specific SWIFT code, including associated bank and country in
 Response Structure:
 ```json
 {
-  "address": string,
-  "bankName": string,
-  "countryISO2": string,
-  "countryName": string,
-  "isHeadquarter": bool,
-  "swiftCode": string,
+  "address": "string",
+  "bankName": "string",
+  "countryISO2": "string",
+  "countryName": "string",
+  "isHeadquarter": "bool",
+  "swiftCode": "string",
   "branches": [
     {
-          "address": string,
-          "bankName": string,
-          "countryISO2": string,
-          "isHeadquarter": bool,
-          "swiftCode": string
-    }, . . .
+          "address": "string",
+          "bankName": "string",
+          "countryISO2": "string",
+          "isHeadquarter": "bool",
+          "swiftCode": "string"
+    },
     ]
 }
 ```
@@ -131,19 +131,19 @@ Response Structure:
 Response Structure for branch swift code:
 ```json
 {
-    "address": string,
-    "bankName": string,
-    "countryISO2": string,
-    "countryName": string,
-    "isHeadquarter": bool,
-    "swiftCode": string
+    "address": "string",
+    "bankName": "string",
+    "countryISO2": "string",
+    "countryName": "string",
+    "isHeadquarter": "bool",
+    "swiftCode": "string"
 }
 ```
 
 Response if not found:
 ```json
 {
-    "message": string
+    "message": "string"
 }
 ```
 
@@ -156,30 +156,30 @@ Fetch all SWIFT codes for a given country based on its ISO2 code.
 Response Structure:
 ```json
 {
-    "countryISO2": string,
-    "countryName": string,
+    "countryISO2": "string",
+    "countryName": "string",
     "swiftCodes": [
         {
-            "address": string,
-    		 "bankName": string,
-    		 "countryISO2": string,
-    		 "isHeadquarter": bool,
-    		 "swiftCode": string
+            "address": "string",
+    		 "bankName": "string",
+    		 "countryISO2": "string",
+    		 "isHeadquarter": "bool",
+    		 "swiftCode": "string"
         },
         {
-            "address": string,
-    		 "bankName": string,
-    		 "countryISO2": string,
-    		 "isHeadquarter": bool,
-    		 "swiftCode": string
-        }, . . .
+            "address": "string",
+    		 "bankName": "string",
+    		 "countryISO2": "string",
+    		 "isHeadquarter": "bool",
+    		 "swiftCode": "string"
+        },
     ]
 }
 ```
 Response if not found:
 ```json
 {
-    "message": string
+    "message": "string"
 }
 ```
 
@@ -192,19 +192,19 @@ Add a new SWIFT code to the database.
 Request Structure :
 ```json
 {
-    "address": string,
-    "bankName": string,
-    "countryISO2": string,
-    "countryName": string,
-    "isHeadquarter": bool,
-    "swiftCode": string,
+    "address": "string",
+    "bankName": "string",
+    "countryISO2": "string",
+    "countryName": "string",
+    "isHeadquarter": "bool",
+    "swiftCode": "string",
 }
 ```
 Response Structure:
 
 ```json
 {
-  "message": string,
+  "message": "string",
 }
 ```
 
@@ -216,7 +216,7 @@ Delete a SWIFT code from the database.
 Response Structure:
 ```json
 {
-    "message": string,
+    "message": "string",
 }
 ```
 
